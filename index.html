@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body
+    style="background-image: url(./asset/bg3.png); background-position: center; background-size: cover; background-repeat: no-repeat; height:100vh; overflow-y: hidden;">
+    <section>
+        <div class="container ">
+            <h1 class="font-bold text-2xl lg:text-4xl mt-12 lg:mt-5 text-white ml-2 " style="  text-shadow: 0 0 10px #fde47a, 0 0 50px #fde47a;"  >N<span class="text-[#f18261]">x</span>TGeN🌀</h1>
+
+            <div
+                class="bg-white  lg:h-[410px] w-[300px] lg:w-[550px] absolute left-[15px] lg:left-[500px] top-[170px] lg:top-[350px] rounded-2xl opacity-75 shadow-2xl shadow-[#fef1da]">
+                <form action="" class="mt-[125px] p-7">
+                    <h1 class="text-xl font-bold font-[TurretRoad] opacity-75" >Account Number</h1>
+                    <input type="number" id="AcNum"
+                        class="border border-gray-300 border-1 w-full p-2 rounded-2xl focus:outline-gray-300  "
+                        oninput="limitInputLength(this, 16)"><br />
+                    <h1 class="text-xl font-bold mt-5 font-[TurretRoad] opacity-75">PlaceHolder Name</h1>
+                    <input type="text" id="AccName"
+                        class="border border-gray-300 border-1 w-full p-2 rounded-2xl focus:outline-gray-300 " maxlength="12"><br />
+                    <div class="grid grid-cols-2 lg:grid-cols-3">
+                        <div>
+
+
+                            <h1 class="text-xl font-bold mt-5 font-[TurretRoad] opacity-75">Expiration MM</h1>
+                            <select name="Month" id="Month"
+                                class="border border-gray-300 border-2 rounded-2xl focus:outline-gray-300 mr-2 p-2 text-xl bg-white opacity-75">
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div>
+
+                            <h1 class="text-xl font-bold mt-5 font-[TurretRoad] opacity-75">Expiration YY</h1>
+                            <select name="year" id="year"
+                                class="border border-gray-300 border-2 rounded-2xl focus:outline-gray-300 p-2 px-6 text-xl opacity-75">
+                                <option value="24">2024</option>
+                                <option value="25">2025</option>
+                                <option value="26">2026</option>
+                                <option value="27">2027</option>
+                                <option value="28">2028</option>
+                                <option value="29">2029</option>
+                                <option value="30">2030</option>
+                            </select>
+                        </div>
+                        <div>
+
+                            <h1 class="text-xl font-bold mt-5 font-[TurretRoad] opacity-75">CVV</h1>
+                            <input type="password" id="cv"
+                                class="border border-gray-300 border-2 rounded-2xl focus:outline-gray-300 mr-2 text-xl p-2 px-5 w-36 opacity-75"
+                                maxlength="3">
+                        </div>
+                    </div>
+                    <button class="mt-2 px-2  w-full py-2 bg-[#fde47f] font-bold text-2xl text-white hover:opacity-100 hover:text-[#281b39]">Submit Now</button>
+                </form>
+            </div>
+            <div class=" bg-gradient-to-r from-[#fde5d9] to-[#fbde7a] shadow-lg  shadow-[#f4c478] opacity-75 hover:opacity-100 h-[150px] w-[260px] lg:h-[200px] lg:w-[380px] shadow-lg rounded-2xl absolute left-[33px] lg:left-[37%] mt-[70px] lg:mt-[230px]"
+                id="font">
+                <div>
+                    <img src="./asset/logo.png" alt="" class="h-[40px] w-[40px] lg:h-[70px] lg:w-[70px] ml-[190px] lg:ml-[280px]">
+                </div>
+                <div class="flex">
+                    <img src="./asset/chip.png" alt="" class="h-[30px] lg:h-[40px] w-[30px] lg:w-[40px]  ml-8">
+                    <img src="./asset/wi-fi.png" alt="" class="h-[25px] w-[25px] transform rotate-90 ml-[160px] lg:ml-[250px] mt-8">
+                </div>
+                <div class="ml-5 " id="cardnumber">
+                <h1 class="lg:text-3xl text-xl font-bold " style="font-family:Rosarivo">#### #### #### ####</h1>
+                </div>
+                <div class="ml-5 lg:mt-5">
+                    <h1 class="lg:text-xl text-md font-bold " style="font-family:Rosarivo" id="cardName">CardHolder</h1>
+                    <div class="flex my-[-20px] opacity-100">
+
+                        <h1 class="text-xl font-bold  ml-[180px] lg:ml-[284px]" id="cardMonth" style="font-family:Rosarivo">0</h1>
+                        <h1 class="text-xl font-bold " id="" style="font-family:Rosarivo">/</h1>
+                        <h1 class="text-xl font-bold " id="cardYear" style="font-family:Rosarivo">00</h1>
+                    </div>
+                </div>
+                <div class="flex">
+
+                </div>
+            </div>
+            <div class="hidden bg-gradient-to-r from-[#fde5d9] to-[#fbde7a] shadow-lg  shadow-[#f4c478] opacity-75 hover:opacity-100 h-[150px] w-[260px] lg:h-[200px] lg:w-[380px] shadow-lg rounded-2xl absolute left-[33px] lg:left-[37%] mt-[70px] lg:mt-[230px]"
+                id="back">
+                <div>
+                    <div class="bg-black h-[35px] mt-5 lg:mt-[23px] opacity-100">
+                    </div>
+                    <div class="bg-white h-[25px] mt-5 lg:mt-16 opacity-100">
+                        <h1 class="ml-[200px] lg:ml-[325px] text-xl lg:text-2xl font-bold" id="cardCV">CCV</h1>
+                    </div>
+                    <div class="lg:mt-2 mt-1 p-2">
+                        <p class="lg:text-md text-sm font-bold font-[TurretRoad]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum
+                            iste beatae nis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js.js"></script>
+</body>
+
+</html>
